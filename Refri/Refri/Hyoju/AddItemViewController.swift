@@ -16,12 +16,17 @@ class AddItemViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        
+        let nibName = UINib(nibName: "AddItemCell", bundle: nil)
+        collectionView.register(nibName, forCellWithReuseIdentifier: "addItemCell")
     }
     
 
 }
 
-extension AddItemViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension AddItemViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -32,7 +37,16 @@ extension AddItemViewController: UICollectionViewDelegate, UICollectionViewDataS
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "addItemCell", for: indexPath) as? AddItemCell else { return UICollectionViewCell() }
-        cell.backgroundColor = .blue
+        cell.backgroundColor = .gray
+        cell.nameTextField?.text = "test"
         return cell
     }
+    
+    // MARK: - DelegateFlowLayout
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = collectionView.frame.width
+        
+        return CGSize(width: width, height: 224)
+    }
+    
 }
