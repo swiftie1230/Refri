@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AddItemCell" customModule="Refri" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="addItemCell" id="gTV-IL-0wX" customClass="AddItemCell" customModule="Refri" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="334" height="224"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -101,6 +101,16 @@
                 <constraint firstItem="uDp-VW-C2I" firstAttribute="leading" secondItem="Raf-5S-mf5" secondAttribute="trailing" constant="24" id="vbU-0i-MB8"/>
                 <constraint firstItem="TQg-gZ-YnO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="18" id="zL5-OJ-Pnb"/>
             </constraints>
+            <connections>
+                <outlet property="datePicker" destination="Raf-5S-mf5" id="FF3-cl-MP4"/>
+                <outlet property="frozenButton" destination="1R9-fs-ENj" id="mE0-Wj-S6S"/>
+                <outlet property="isExpirationSwitch" destination="aVy-SQ-zGZ" id="h0g-9w-a1c"/>
+                <outlet property="memoTextField" destination="gCg-vx-kPM" id="VCu-6U-cXZ"/>
+                <outlet property="nameTextField" destination="dmK-sx-ECx" id="tVu-ly-ocf"/>
+                <outlet property="refiButton" destination="KSi-Qg-1Uh" id="Ccj-Hc-GFK"/>
+                <outlet property="roomButton" destination="QY2-me-7zu" id="iqs-Yh-eqp"/>
+                <outlet property="typePickerView" destination="TQg-gZ-YnO" id="hGL-e4-1nR"/>
+            </connections>
             <point key="canvasLocation" x="131.8840579710145" y="112.5"/>
         </collectionViewCell>
     </objects>

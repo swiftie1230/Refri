@@ -10,6 +10,7 @@
 		DF21DF54270FE71100452D1B /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF21DF53270FE71100452D1B /* MainScreenViewController.swift */; };
 		DF21DF59270FF2E300452D1B /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF21DF57270FF2E200452D1B /* CategoryCell.swift */; };
 		DF21DF5A270FF2E300452D1B /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF21DF58270FF2E200452D1B /* CategoryCell.xib */; };
+		DF4D203B2719D1D100684E0F /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4D203A2719D1D100684E0F /* AddItemViewController.swift */; };
 		DF4D3F9B2717F78100A616C7 /* AddItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4D3F992717F78000A616C7 /* AddItemCell.swift */; };
 		DF4D3F9C2717F78100A616C7 /* AddItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF4D3F9A2717F78000A616C7 /* AddItemCell.xib */; };
 		DF6707C3270AE17F005B42A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6707C2270AE17F005B42A9 /* AppDelegate.swift */; };
@@ -25,6 +26,7 @@
 		DF21DF53270FE71100452D1B /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		DF21DF57270FF2E200452D1B /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		DF21DF58270FF2E200452D1B /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
+		DF4D203A2719D1D100684E0F /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 		DF4D3F992717F78000A616C7 /* AddItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemCell.swift; sourceTree = "<group>"; };
 		DF4D3F9A2717F78000A616C7 /* AddItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddItemCell.xib; sourceTree = "<group>"; };
 		DF6707BF270AE17F005B42A9 /* Refri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Refri.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +99,7 @@
 				DF21DF5B270FF2F400452D1B /* Cell */,
 				DF6707C8270AE17F005B42A9 /* Main.storyboard */,
 				DF21DF53270FE71100452D1B /* MainScreenViewController.swift */,
+				DF4D203A2719D1D100684E0F /* AddItemViewController.swift */,
 			);
 			path = Hyoju;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				DF6707C3270AE17F005B42A9 /* AppDelegate.swift in Sources */,
 				DF21DF54270FE71100452D1B /* MainScreenViewController.swift in Sources */,
 				DF6707CD270AE17F005B42A9 /* Refri.xcdatamodeld in Sources */,
+				DF4D203B2719D1D100684E0F /* AddItemViewController.swift in Sources */,
 				DF6707C5270AE17F005B42A9 /* SceneDelegate.swift in Sources */,
 				DF21DF59270FF2E300452D1B /* CategoryCell.swift in Sources */,
 			);
