@@ -16,20 +16,20 @@
                 <rect key="frame" x="0.0" y="0.0" width="334" height="224"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dmK-sx-ECx">
-                        <rect key="frame" x="18" y="20" width="298" height="34"/>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="상품 이름" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dmK-sx-ECx">
+                        <rect key="frame" x="18" y="24" width="298" height="34"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
-                    <pickerView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TQg-gZ-YnO">
-                        <rect key="frame" x="18" y="62" width="120" height="40"/>
+                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TQg-gZ-YnO">
+                        <rect key="frame" x="18" y="68" width="120" height="40"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="120" id="VLe-mT-VLK"/>
                             <constraint firstAttribute="height" constant="40" id="yUX-Cz-jbK"/>
                         </constraints>
                     </pickerView>
-                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSi-Qg-1Uh">
-                        <rect key="frame" x="146" y="67" width="50" height="31"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSi-Qg-1Uh">
+                        <rect key="frame" x="146" y="71.5" width="50" height="33"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="50" id="BqJ-Ur-zCx"/>
                             <constraint firstAttribute="height" constant="33" id="dgt-Vi-jFI"/>
@@ -37,39 +37,69 @@
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" title="냉장"/>
                     </button>
-                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1R9-fs-ENj">
-                        <rect key="frame" x="204" y="68" width="50" height="31"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1R9-fs-ENj">
+                        <rect key="frame" x="204" y="71.5" width="50" height="33"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="33" id="EVB-F6-LFy"/>
-                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="ezR-FS-k9F"/>
                             <constraint firstAttribute="width" constant="50" id="njr-jr-Rhy"/>
                         </constraints>
                         <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="plain" title="냉장"/>
+                        <buttonConfiguration key="configuration" style="plain" title="냉동"/>
                     </button>
-                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QY2-me-7zu">
-                        <rect key="frame" x="262" y="67" width="50" height="31"/>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aVy-SQ-zGZ">
+                        <rect key="frame" x="267" y="122.5" width="51" height="31"/>
+                    </switch>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QY2-me-7zu">
+                        <rect key="frame" x="262" y="71.5" width="50" height="33"/>
                         <constraints>
-                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="bxM-D6-F9b"/>
                             <constraint firstAttribute="width" constant="50" id="fnq-Jm-OPP"/>
                             <constraint firstAttribute="height" constant="33" id="tI3-Vy-Odg"/>
                         </constraints>
                         <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="plain" title="냉장"/>
+                        <buttonConfiguration key="configuration" style="plain" title="실온"/>
                     </button>
+                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Raf-5S-mf5">
+                        <rect key="frame" x="18" y="118" width="120" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="qkb-1I-jDQ"/>
+                            <constraint firstAttribute="height" constant="40" id="xzN-Rb-Y8u"/>
+                        </constraints>
+                    </datePicker>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="유통기한 유무" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDp-VW-C2I">
+                        <rect key="frame" x="162" y="127.5" width="93" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="메모" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gCg-vx-kPM">
+                        <rect key="frame" x="18" y="168" width="298" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
                 <constraint firstItem="dmK-sx-ECx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="18" id="18d-Qu-gSj"/>
+                <constraint firstItem="1R9-fs-ENj" firstAttribute="centerY" secondItem="KSi-Qg-1Uh" secondAttribute="centerY" id="4Qd-df-w8J"/>
+                <constraint firstItem="gCg-vx-kPM" firstAttribute="top" secondItem="Raf-5S-mf5" secondAttribute="bottom" constant="10" id="Cdm-cZ-WaJ"/>
                 <constraint firstItem="1R9-fs-ENj" firstAttribute="leading" secondItem="KSi-Qg-1Uh" secondAttribute="trailing" constant="8" id="E7z-Uv-OYb"/>
                 <constraint firstItem="KSi-Qg-1Uh" firstAttribute="leading" secondItem="TQg-gZ-YnO" secondAttribute="trailing" constant="8" id="HlT-dI-rui"/>
-                <constraint firstItem="TQg-gZ-YnO" firstAttribute="leading" secondItem="dmK-sx-ECx" secondAttribute="leading" id="IkL-cg-T82"/>
+                <constraint firstItem="Raf-5S-mf5" firstAttribute="top" secondItem="TQg-gZ-YnO" secondAttribute="bottom" constant="10" id="MmY-5y-Qpd"/>
                 <constraint firstItem="dmK-sx-ECx" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="NOI-gt-LsX"/>
                 <constraint firstItem="QY2-me-7zu" firstAttribute="leading" secondItem="1R9-fs-ENj" secondAttribute="trailing" constant="8" id="O5i-vE-DKa"/>
                 <constraint firstItem="QY2-me-7zu" firstAttribute="centerY" secondItem="1R9-fs-ENj" secondAttribute="centerY" id="OPx-LA-afd"/>
+                <constraint firstItem="gCg-vx-kPM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="18" id="ScW-53-MVS"/>
+                <constraint firstAttribute="trailing" secondItem="aVy-SQ-zGZ" secondAttribute="trailing" constant="18" id="Tra-AY-OHi"/>
+                <constraint firstItem="Raf-5S-mf5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="18" id="ZXm-Yf-Lko"/>
+                <constraint firstItem="aVy-SQ-zGZ" firstAttribute="centerY" secondItem="uDp-VW-C2I" secondAttribute="centerY" id="ZsH-dn-mDB"/>
+                <constraint firstItem="gCg-vx-kPM" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="cDt-9w-7CH"/>
+                <constraint firstItem="uDp-VW-C2I" firstAttribute="centerY" secondItem="Raf-5S-mf5" secondAttribute="centerY" id="g8f-Jo-phQ"/>
+                <constraint firstItem="dmK-sx-ECx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="24" id="gX4-3X-fFq"/>
                 <constraint firstItem="KSi-Qg-1Uh" firstAttribute="centerY" secondItem="TQg-gZ-YnO" secondAttribute="centerY" id="l2V-s8-esT"/>
                 <constraint firstItem="TQg-gZ-YnO" firstAttribute="top" secondItem="dmK-sx-ECx" secondAttribute="bottom" constant="10" id="s8c-eX-qlc"/>
+                <constraint firstItem="uDp-VW-C2I" firstAttribute="leading" secondItem="Raf-5S-mf5" secondAttribute="trailing" constant="24" id="vbU-0i-MB8"/>
+                <constraint firstItem="TQg-gZ-YnO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="18" id="zL5-OJ-Pnb"/>
             </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="112.5"/>
         </collectionViewCell>
