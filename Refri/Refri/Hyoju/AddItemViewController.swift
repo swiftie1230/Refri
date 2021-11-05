@@ -9,7 +9,8 @@ import UIKit
 
 class AddItemViewController: UIViewController {
     
-//    var items:[
+    // MARK: [TODO] 나중에 모델 만들어서 배열 타입 모델로 변경
+    var items:[String] = []
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -23,6 +24,14 @@ class AddItemViewController: UIViewController {
         collectionView.register(nibName, forCellWithReuseIdentifier: "addItemCell")
     }
     
+    // MARK: - 버튼 이벤트
+    @IBAction func actAddItem(_ sender: Any) {
+        items.append("test")
+        print("\(items.count)")
+        self.collectionView.reloadData()    
+    }
+    
+    
 
 }
 
@@ -32,7 +41,8 @@ extension AddItemViewController: UICollectionViewDelegate, UICollectionViewDataS
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return items.count
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

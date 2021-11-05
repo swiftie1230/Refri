@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IY6-vG-yrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8ls-WX-2Jg">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--home-->
+        <!--나의 냉장고-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainScreenViewController" customModule="Refri" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,39 +18,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2uW-wZ-04I">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="-2" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Kqw-jI-VnZ">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
-                                <color key="backgroundColor" red="1" green="0.44705882349999998" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Nay-mq-SXR">
-                                    <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells/>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="gJB-62-b8w"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="KtQ-JV-Oyk"/>
-                                </connections>
-                            </collectionView>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="2uW-wZ-04I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AbJ-GG-fdd"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2uW-wZ-04I" secondAttribute="trailing" id="ily-wx-iXP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2uW-wZ-04I" secondAttribute="bottom" id="lia-T4-KjI"/>
-                            <constraint firstItem="2uW-wZ-04I" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pOd-Rv-ycw"/>
+                            <constraint firstItem="Kqw-jI-VnZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4QV-lj-A6k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Kqw-jI-VnZ" secondAttribute="bottom" id="5Kk-ia-Mqx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kqw-jI-VnZ" secondAttribute="trailing" id="CQs-Pw-UTa"/>
+                            <constraint firstItem="Kqw-jI-VnZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eKl-Ra-ccX"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="home" image="house" catalog="system" selectedImage="house.fill" id="xX7-dT-0hH"/>
+                    <tabBarItem key="tabBarItem" title="나의 냉장고" image="my_refri_unselected" selectedImage="my_refri_selected" id="xX7-dT-0hH"/>
                     <connections>
-                        <outlet property="collectionView" destination="2uW-wZ-04I" id="6rq-vc-uWd"/>
+                        <outlet property="tableView" destination="Kqw-jI-VnZ" id="bmv-DI-S2f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="939.13043478260875" y="83.705357142857139"/>
+            <point key="canvasLocation" x="774" y="-648"/>
         </scene>
         <!--Add Item View Controller-->
         <scene sceneID="7MP-0Q-JU2">
@@ -67,12 +56,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQx-1u-1Rc">
-                                <rect key="frame" x="169" y="723" width="76.5" height="31"/>
+                                <rect key="frame" x="169" y="772" width="76.5" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="품목추가 "/>
+                                <connections>
+                                    <action selector="actAddItem:" destination="IY6-vG-yrT" eventType="touchUpInside" id="ifk-dz-A2q"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="yul-kg-tJz">
-                                <rect key="frame" x="108.5" y="768" width="197" height="31"/>
+                                <rect key="frame" x="108.5" y="817" width="197" height="31"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AgO-Wi-NDy">
                                         <rect key="frame" x="0.0" y="0.0" width="48.5" height="31"/>
@@ -87,7 +79,7 @@
                                 </subviews>
                             </stackView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IA4-7s-3GR">
-                                <rect key="frame" x="36" y="177" width="342" height="522"/>
+                                <rect key="frame" x="36" y="177" width="342" height="571"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="p2c-H1-FC2">
                                     <size key="itemSize" width="128" height="128"/>
@@ -131,7 +123,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f6D-Qg-MMA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="937.68115942028987" y="815.625"/>
+            <point key="canvasLocation" x="774" y="84"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="128-BO-awK">
@@ -145,15 +137,14 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="84b-Bq-jiN"/>
-                        <segue destination="IY6-vG-yrT" kind="relationship" relationship="viewControllers" id="As8-oa-Zpr"/>
-                        <segue destination="LgA-O9-QkY" kind="relationship" relationship="viewControllers" id="vwG-c4-q0A"/>
+                        <segue destination="LgA-O9-QkY" kind="relationship" relationship="viewControllers" id="tvp-Xc-nkT"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U9J-Ms-erZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="28.985507246376812" y="83.705357142857139"/>
         </scene>
-        <!--list-->
+        <!--나의 재료들-->
         <scene sceneID="N3Y-8F-F89">
             <objects>
                 <viewController id="LgA-O9-QkY" sceneMemberID="viewController">
@@ -163,18 +154,18 @@
                         <viewLayoutGuide key="safeArea" id="cr3-al-8jN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="list" image="list.bullet.rectangle" catalog="system" selectedImage="list.bullet.rectangle.fill" id="ZVL-p7-E0X"/>
+                    <tabBarItem key="tabBarItem" title="나의 재료들" image="my_list_unselected" selectedImage="my_list_selected" id="ZVL-p7-E0X"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FqG-Oe-0i4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="939" y="1499"/>
+            <point key="canvasLocation" x="774" y="814"/>
         </scene>
     </scenes>
     <resources>
-        <image name="house" catalog="system" width="128" height="106"/>
-        <image name="house.fill" catalog="system" width="128" height="106"/>
-        <image name="list.bullet.rectangle" catalog="system" width="128" height="93"/>
-        <image name="list.bullet.rectangle.fill" catalog="system" width="128" height="93"/>
+        <image name="my_list_selected" width="26" height="26"/>
+        <image name="my_list_unselected" width="26" height="26"/>
+        <image name="my_refri_selected" width="26" height="26"/>
+        <image name="my_refri_unselected" width="26" height="26"/>
         <image name="plus.circle" catalog="system" width="128" height="121"/>
         <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
