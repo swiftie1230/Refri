@@ -16,6 +16,9 @@ class MainScreenViewController: UIViewController {
         let inventoryCellNib = UINib(nibName: "InventoryCollectionViewCell", bundle: nil)
         collectionView.register(inventoryCellNib, forCellWithReuseIdentifier: "InventoryCell")
         
+        let expirationDateCollectionViewCellNib = UINib(nibName: "ExpirationDateCollectionViewCell", bundle: nil)
+        collectionView.register(expirationDateCollectionViewCellNib, forCellWithReuseIdentifier: "ExpirationDateCollectionViewCell")
+        
     }
     
 }
@@ -35,6 +38,9 @@ extension MainScreenViewController: UICollectionViewDelegate, UICollectionViewDe
         
         switch indexPath.item {
         case 1:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ExpirationDateCollectionViewCell", for: indexPath) as! ExpirationDateCollectionViewCell
+            
+            cell.tableView.backgroundColor = .purple
             return cell
         case 2:
             return cell
