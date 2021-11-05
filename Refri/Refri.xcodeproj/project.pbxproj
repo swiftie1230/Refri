@@ -10,6 +10,8 @@
 		DF21DF54270FE71100452D1B /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF21DF53270FE71100452D1B /* MainScreenViewController.swift */; };
 		DF21DF59270FF2E300452D1B /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF21DF57270FF2E200452D1B /* CategoryCell.swift */; };
 		DF21DF5A270FF2E300452D1B /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF21DF58270FF2E200452D1B /* CategoryCell.xib */; };
+		DF2F85442735342600288F15 /* InventoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F85422735342600288F15 /* InventoryCollectionViewCell.swift */; };
+		DF2F85452735342600288F15 /* InventoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF2F85432735342600288F15 /* InventoryCollectionViewCell.xib */; };
 		DF4D3F9B2717F78100A616C7 /* AddItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4D3F992717F78000A616C7 /* AddItemCell.swift */; };
 		DF4D3F9C2717F78100A616C7 /* AddItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF4D3F9A2717F78000A616C7 /* AddItemCell.xib */; };
 		DF6707C3270AE17F005B42A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6707C2270AE17F005B42A9 /* AppDelegate.swift */; };
@@ -25,6 +27,8 @@
 		DF21DF53270FE71100452D1B /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		DF21DF57270FF2E200452D1B /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		DF21DF58270FF2E200452D1B /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
+		DF2F85422735342600288F15 /* InventoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		DF2F85432735342600288F15 /* InventoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InventoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		DF4D3F992717F78000A616C7 /* AddItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemCell.swift; sourceTree = "<group>"; };
 		DF4D3F9A2717F78000A616C7 /* AddItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddItemCell.xib; sourceTree = "<group>"; };
 		DF6707BF270AE17F005B42A9 /* Refri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Refri.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,12 +56,22 @@
 		DF21DF5B270FF2F400452D1B /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				DF21DF57270FF2E200452D1B /* CategoryCell.swift */,
-				DF21DF58270FF2E200452D1B /* CategoryCell.xib */,
+				DF2F85412735335100288F15 /* InMainViewController */,
 				DF4D3F992717F78000A616C7 /* AddItemCell.swift */,
 				DF4D3F9A2717F78000A616C7 /* AddItemCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		DF2F85412735335100288F15 /* InMainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DF21DF57270FF2E200452D1B /* CategoryCell.swift */,
+				DF21DF58270FF2E200452D1B /* CategoryCell.xib */,
+				DF2F85422735342600288F15 /* InventoryCollectionViewCell.swift */,
+				DF2F85432735342600288F15 /* InventoryCollectionViewCell.xib */,
+			);
+			path = InMainViewController;
 			sourceTree = "<group>";
 		};
 		DF6707B6270AE17F005B42A9 = {
@@ -172,6 +186,7 @@
 				DF6707CF270AE183005B42A9 /* Assets.xcassets in Resources */,
 				DF6707CA270AE17F005B42A9 /* Main.storyboard in Resources */,
 				DF4D3F9C2717F78100A616C7 /* AddItemCell.xib in Resources */,
+				DF2F85452735342600288F15 /* InventoryCollectionViewCell.xib in Resources */,
 				DF6707DC270AE217005B42A9 /* Sub.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -183,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF2F85442735342600288F15 /* InventoryCollectionViewCell.swift in Sources */,
 				DF4D3F9B2717F78100A616C7 /* AddItemCell.swift in Sources */,
 				DF6707C3270AE17F005B42A9 /* AppDelegate.swift in Sources */,
 				DF21DF54270FE71100452D1B /* MainScreenViewController.swift in Sources */,
