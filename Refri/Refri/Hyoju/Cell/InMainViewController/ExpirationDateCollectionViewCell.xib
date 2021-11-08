@@ -23,32 +23,32 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="t8a-ng-jE0">
-                        <rect key="frame" x="16" y="84.5" width="390" height="179.5"/>
-                        <color key="backgroundColor" systemColor="tintColor"/>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="YLe-xX-7r8">
+                        <rect key="frame" x="16" y="84.5" width="390" height="247.5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </tableView>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
                 <constraint firstItem="7ba-5U-Jg2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="68k-jj-bHp"/>
-                <constraint firstItem="t8a-ng-jE0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="6eS-QT-pGp"/>
-                <constraint firstItem="t8a-ng-jE0" firstAttribute="top" secondItem="7ba-5U-Jg2" secondAttribute="bottom" constant="25" id="6iV-2V-gRC"/>
-                <constraint firstAttribute="trailing" secondItem="t8a-ng-jE0" secondAttribute="trailing" constant="16" id="Szn-yB-vEI"/>
+                <constraint firstItem="YLe-xX-7r8" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="7UT-U8-OS4"/>
+                <constraint firstItem="YLe-xX-7r8" firstAttribute="top" secondItem="7ba-5U-Jg2" secondAttribute="bottom" constant="25" id="UN2-Qf-96b"/>
+                <constraint firstItem="YLe-xX-7r8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="Wdg-nV-fgL"/>
                 <constraint firstItem="7ba-5U-Jg2" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="40" id="XCM-3a-yUZ"/>
-                <constraint firstAttribute="bottom" secondItem="t8a-ng-jE0" secondAttribute="bottom" constant="68" id="dLb-I5-2vO"/>
                 <constraint firstAttribute="trailing" secondItem="7ba-5U-Jg2" secondAttribute="trailing" constant="16" id="o6w-0k-00w"/>
+                <constraint firstAttribute="bottom" secondItem="YLe-xX-7r8" secondAttribute="bottom" id="qku-fO-Lc5"/>
             </constraints>
             <size key="customSize" width="422" height="332"/>
             <connections>
-                <outlet property="tableView" destination="t8a-ng-jE0" id="LDA-W9-nxo"/>
+                <outlet property="tableView" destination="YLe-xX-7r8" id="lb0-J2-WZP"/>
             </connections>
             <point key="canvasLocation" x="426.08695652173918" y="194.19642857142856"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

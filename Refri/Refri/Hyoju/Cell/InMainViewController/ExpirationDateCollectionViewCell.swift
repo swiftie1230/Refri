@@ -17,9 +17,6 @@ class ExpirationDateCollectionViewCell: UICollectionViewCell {
         
         tableView.delegate = self
         tableView.dataSource = self
-
-        
-        
         
         let ItemInfoCellNib = UINib(nibName: "ItemInfoTableViewCell", bundle: nil)
         tableView.register(ItemInfoCellNib, forCellReuseIdentifier: "ItemInfoTableViewCell")
@@ -36,6 +33,10 @@ extension ExpirationDateCollectionViewCell: UITableViewDelegate, UITableViewData
         let cell = tableView.dequeueReusableCell(withIdentifier: "ItemInfoTableViewCell") as! ItemInfoTableViewCell
         cell.ItemNameLabel.text = "바나나"
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
     }
 }
 

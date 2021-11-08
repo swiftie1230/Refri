@@ -18,6 +18,10 @@
 		DF5B0F2727354271009D736A /* ExpirationDateCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF5B0F2527354271009D736A /* ExpirationDateCollectionViewCell.xib */; };
 		DF5B0F2A273543F3009D736A /* ItemInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5B0F28273543F3009D736A /* ItemInfoTableViewCell.swift */; };
 		DF5B0F2B273543F3009D736A /* ItemInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF5B0F29273543F3009D736A /* ItemInfoTableViewCell.xib */; };
+		DF5B0F2E273554C7009D736A /* CheckItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5B0F2C273554C7009D736A /* CheckItemCell.swift */; };
+		DF5B0F2F273554C7009D736A /* CheckItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF5B0F2D273554C7009D736A /* CheckItemCell.xib */; };
+		DF5B0F3227355596009D736A /* ItemInfoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5B0F3027355596009D736A /* ItemInfoCollectionViewCell.swift */; };
+		DF5B0F3327355596009D736A /* ItemInfoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF5B0F3127355596009D736A /* ItemInfoCollectionViewCell.xib */; };
 		DF6707C3270AE17F005B42A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6707C2270AE17F005B42A9 /* AppDelegate.swift */; };
 		DF6707C5270AE17F005B42A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6707C4270AE17F005B42A9 /* SceneDelegate.swift */; };
 		DF6707CA270AE17F005B42A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF6707C8270AE17F005B42A9 /* Main.storyboard */; };
@@ -39,6 +43,10 @@
 		DF5B0F2527354271009D736A /* ExpirationDateCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpirationDateCollectionViewCell.xib; sourceTree = "<group>"; };
 		DF5B0F28273543F3009D736A /* ItemInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInfoTableViewCell.swift; sourceTree = "<group>"; };
 		DF5B0F29273543F3009D736A /* ItemInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemInfoTableViewCell.xib; sourceTree = "<group>"; };
+		DF5B0F2C273554C7009D736A /* CheckItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckItemCell.swift; sourceTree = "<group>"; };
+		DF5B0F2D273554C7009D736A /* CheckItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckItemCell.xib; sourceTree = "<group>"; };
+		DF5B0F3027355596009D736A /* ItemInfoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInfoCollectionViewCell.swift; sourceTree = "<group>"; };
+		DF5B0F3127355596009D736A /* ItemInfoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemInfoCollectionViewCell.xib; sourceTree = "<group>"; };
 		DF6707BF270AE17F005B42A9 /* Refri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Refri.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF6707C2270AE17F005B42A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF6707C4270AE17F005B42A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +90,10 @@
 				DF5B0F2527354271009D736A /* ExpirationDateCollectionViewCell.xib */,
 				DF5B0F28273543F3009D736A /* ItemInfoTableViewCell.swift */,
 				DF5B0F29273543F3009D736A /* ItemInfoTableViewCell.xib */,
+				DF5B0F2C273554C7009D736A /* CheckItemCell.swift */,
+				DF5B0F2D273554C7009D736A /* CheckItemCell.xib */,
+				DF5B0F3027355596009D736A /* ItemInfoCollectionViewCell.swift */,
+				DF5B0F3127355596009D736A /* ItemInfoCollectionViewCell.xib */,
 			);
 			path = InMainViewController;
 			sourceTree = "<group>";
@@ -193,11 +205,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF5B0F3327355596009D736A /* ItemInfoCollectionViewCell.xib in Resources */,
 				DF21DF5A270FF2E300452D1B /* CategoryCell.xib in Resources */,
 				DF6707D2270AE183005B42A9 /* LaunchScreen.storyboard in Resources */,
 				DF6707CF270AE183005B42A9 /* Assets.xcassets in Resources */,
 				DF6707CA270AE17F005B42A9 /* Main.storyboard in Resources */,
 				DF5B0F2B273543F3009D736A /* ItemInfoTableViewCell.xib in Resources */,
+				DF5B0F2F273554C7009D736A /* CheckItemCell.xib in Resources */,
 				DF4D3F9C2717F78100A616C7 /* AddItemCell.xib in Resources */,
 				DF5B0F2727354271009D736A /* ExpirationDateCollectionViewCell.xib in Resources */,
 				DF2F85452735342600288F15 /* InventoryCollectionViewCell.xib in Resources */,
@@ -218,7 +232,9 @@
 				DF6707C3270AE17F005B42A9 /* AppDelegate.swift in Sources */,
 				DF21DF54270FE71100452D1B /* MainScreenViewController.swift in Sources */,
 				DF6707CD270AE17F005B42A9 /* Refri.xcdatamodeld in Sources */,
+				DF5B0F3227355596009D736A /* ItemInfoCollectionViewCell.swift in Sources */,
 				DF6707C5270AE17F005B42A9 /* SceneDelegate.swift in Sources */,
+				DF5B0F2E273554C7009D736A /* CheckItemCell.swift in Sources */,
 				DF5B0F2A273543F3009D736A /* ItemInfoTableViewCell.swift in Sources */,
 				DF21DF59270FF2E300452D1B /* CategoryCell.swift in Sources */,
 			);
@@ -374,7 +390,7 @@
 				INFOPLIST_FILE = Refri/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Sub;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -402,7 +418,7 @@
 				INFOPLIST_FILE = Refri/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Sub;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
