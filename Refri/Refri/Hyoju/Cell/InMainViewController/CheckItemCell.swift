@@ -12,7 +12,6 @@ class CheckItemCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        collectionView.backgroundColor = .black
         
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -23,7 +22,7 @@ class CheckItemCell: UICollectionViewCell {
 
 }
 
-extension CheckItemCell: UICollectionViewDelegate, UICollectionViewDataSource {
+extension CheckItemCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     // 6개만 보여줄건지?
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 6
@@ -33,4 +32,11 @@ extension CheckItemCell: UICollectionViewDelegate, UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ItemInfoCollectionViewCell", for: indexPath) as! ItemInfoCollectionViewCell
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = collectionView.frame.width / 4
+        let height = width*1.6
+        return CGSize(width: width, height: height)
+    }
+    
 }

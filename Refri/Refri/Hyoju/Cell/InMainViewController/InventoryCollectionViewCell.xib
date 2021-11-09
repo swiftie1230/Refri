@@ -23,7 +23,7 @@
                         <color key="textColor" red="0.92156862745098034" green="0.63921568627450975" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="EzE-kA-AaH">
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="EzE-kA-AaH">
                         <rect key="frame" x="16" y="96" width="309" height="171"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tGd-HV-TkZ">
@@ -43,20 +43,19 @@
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstItem="EzE-kA-AaH" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Cef-r8-rpE"/>
-                <constraint firstItem="EzE-kA-AaH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="CkJ-Yf-6Yy"/>
-                <constraint firstItem="4L8-TP-kln" firstAttribute="leading" secondItem="0FM-ZE-KDy" secondAttribute="trailing" constant="5" id="JOK-6z-YUf"/>
-                <constraint firstItem="4L8-TP-kln" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="56" id="a7H-do-klq"/>
-                <constraint firstItem="EzE-kA-AaH" firstAttribute="top" secondItem="4L8-TP-kln" secondAttribute="bottom" constant="20" id="mrE-Hn-lvD"/>
-                <constraint firstItem="0FM-ZE-KDy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="56" id="rrY-V8-tnv"/>
-                <constraint firstItem="0FM-ZE-KDy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="srH-1v-CpP"/>
-                <constraint firstAttribute="bottom" secondItem="EzE-kA-AaH" secondAttribute="bottom" constant="60" id="z6u-dw-z99"/>
+                <constraint firstItem="4L8-TP-kln" firstAttribute="centerY" secondItem="0FM-ZE-KDy" secondAttribute="centerY" id="57i-TW-SzO"/>
+                <constraint firstItem="4L8-TP-kln" firstAttribute="leading" secondItem="0FM-ZE-KDy" secondAttribute="trailing" constant="5" id="EJA-bs-feT"/>
+                <constraint firstItem="0FM-ZE-KDy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="56" id="H19-IG-cgF"/>
+                <constraint firstItem="EzE-kA-AaH" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="U8z-Dn-eMN"/>
+                <constraint firstItem="EzE-kA-AaH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="jPc-cG-jo6"/>
+                <constraint firstItem="0FM-ZE-KDy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="kd4-dt-j0Y"/>
+                <constraint firstItem="EzE-kA-AaH" firstAttribute="top" secondItem="0FM-ZE-KDy" secondAttribute="bottom" constant="20.5" id="rcD-D0-MRK"/>
             </constraints>
             <size key="customSize" width="496" height="445"/>
             <connections>
                 <outlet property="collectionView" destination="EzE-kA-AaH" id="e5d-ZB-npc"/>
             </connections>
-            <point key="canvasLocation" x="461.59420289855075" y="178.45982142857142"/>
+            <point key="canvasLocation" x="415" y="160"/>
         </collectionViewCell>
     </objects>
     <resources>

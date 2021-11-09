@@ -20,7 +20,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wk2-m5-Gm5">
                         <rect key="frame" x="0.0" y="0.0" width="95" height="80"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kcq-tb-oqD">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample-icon" translatesAutoresizingMaskIntoConstraints="NO" id="Kcq-tb-oqD">
                                 <rect key="frame" x="31.5" y="14" width="32" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="lAV-CX-Rpp"/>
@@ -65,6 +65,7 @@
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="SQ6-ci-wwA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="1Vz-Vy-lAG"/>
                 <constraint firstItem="7I0-yn-DlD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Bif-2b-l3S"/>
@@ -83,10 +84,11 @@
                 <outlet property="ItemDescriptionLabel" destination="7I0-yn-DlD" id="1G0-71-hUq"/>
                 <outlet property="categoryImageView" destination="Kcq-tb-oqD" id="1ne-p5-jhW"/>
             </connections>
-            <point key="canvasLocation" x="207.24637681159422" y="155.02232142857142"/>
+            <point key="canvasLocation" x="206.52173913043481" y="154.6875"/>
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="sample-icon" width="35" height="35"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
