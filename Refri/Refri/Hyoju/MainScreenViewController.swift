@@ -10,7 +10,7 @@ import UIKit
 class MainScreenViewController: UIViewController {
     var sectionArray:[UICollectionViewCell]?
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
