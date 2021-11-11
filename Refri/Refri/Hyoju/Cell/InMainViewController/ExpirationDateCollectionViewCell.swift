@@ -11,6 +11,7 @@ class ExpirationDateCollectionViewCell: UICollectionViewCell {
     let itemArr:[String] = ["","","",""]
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var moreButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()

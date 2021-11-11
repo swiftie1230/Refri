@@ -9,6 +9,7 @@ import UIKit
 
 class CheckItemCell: UICollectionViewCell {
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var moreButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()

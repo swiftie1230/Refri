@@ -50,6 +50,7 @@
             </constraints>
             <size key="customSize" width="422" height="332"/>
             <connections>
+                <outlet property="moreButton" destination="9CS-NB-1cJ" id="o2B-8K-eDW"/>
                 <outlet property="tableView" destination="YLe-xX-7r8" id="lb0-J2-WZP"/>
             </connections>
             <point key="canvasLocation" x="426.08695652173918" y="194.19642857142856"/>
