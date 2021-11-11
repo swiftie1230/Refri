@@ -32,13 +32,23 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                     </collectionView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dB8-Vn-qUW">
+                        <rect key="frame" x="381.5" y="37.5" width="59.5" height="26"/>
+                        <color key="tintColor" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="더보기 +">
+                            <fontDescription key="titleFontDescription" type="system" pointSize="10"/>
+                        </buttonConfiguration>
+                    </button>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
+                <constraint firstItem="dB8-Vn-qUW" firstAttribute="centerY" secondItem="Haz-6w-pL4" secondAttribute="centerY" id="7xE-uo-3qc"/>
                 <constraint firstItem="978-Td-8u1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="AJz-TD-GJw"/>
                 <constraint firstItem="Haz-6w-pL4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="40" id="Chp-pT-NU3"/>
                 <constraint firstItem="978-Td-8u1" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="M5q-Y5-54M"/>
+                <constraint firstAttribute="trailing" secondItem="dB8-Vn-qUW" secondAttribute="trailing" constant="16" id="f1D-H7-89U"/>
                 <constraint firstAttribute="bottom" secondItem="978-Td-8u1" secondAttribute="bottom" id="iO8-RT-ZDA"/>
                 <constraint firstItem="Haz-6w-pL4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="vXl-yX-jmn"/>
                 <constraint firstItem="978-Td-8u1" firstAttribute="top" secondItem="Haz-6w-pL4" secondAttribute="bottom" constant="25" id="zBN-4e-U1t"/>
@@ -46,6 +56,7 @@
             <size key="customSize" width="457" height="292"/>
             <connections>
                 <outlet property="collectionView" destination="978-Td-8u1" id="OcJ-gc-gIN"/>
+                <outlet property="moreButton" destination="dB8-Vn-qUW" id="U7H-gd-aAZ"/>
             </connections>
             <point key="canvasLocation" x="426.81159420289856" y="193.52678571428569"/>
         </collectionViewCell>
