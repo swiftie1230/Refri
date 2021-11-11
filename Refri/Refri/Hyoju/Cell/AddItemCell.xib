@@ -2,92 +2,131 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="addItemCell" id="gTV-IL-0wX" customClass="AddItemCell" customModule="Refri" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="334" height="224"/>
+            <rect key="frame" x="0.0" y="0.0" width="400" height="519"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="334" height="224"/>
+                <rect key="frame" x="0.0" y="0.0" width="400" height="519"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="상품 이름" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dmK-sx-ECx">
-                        <rect key="frame" x="18" y="24" width="298" height="34"/>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="상품 이름" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZqM-q8-rBo">
+                        <rect key="frame" x="25" y="40" width="350" height="34"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
-                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TQg-gZ-YnO">
-                        <rect key="frame" x="18" y="68" width="120" height="40"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="상품 종류" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OkS-m4-yrk">
+                        <rect key="frame" x="25" y="94" width="350" height="14.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                        <color key="textColor" red="0.4392156862745098" green="0.40392156862745099" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ORa-wQ-0S1">
+                        <rect key="frame" x="25" y="109" width="350" height="32"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="120" id="VLe-mT-VLK"/>
-                            <constraint firstAttribute="height" constant="40" id="yUX-Cz-jbK"/>
+                            <constraint firstAttribute="height" constant="32" id="ZdM-by-8vR"/>
                         </constraints>
                     </pickerView>
-                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aVy-SQ-zGZ">
-                        <rect key="frame" x="267" y="122.5" width="51" height="31"/>
-                    </switch>
-                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Raf-5S-mf5">
-                        <rect key="frame" x="18" y="118" width="120" height="40"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="120" id="qkb-1I-jDQ"/>
-                            <constraint firstAttribute="height" constant="40" id="xzN-Rb-Y8u"/>
-                        </constraints>
-                    </datePicker>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="유통기한 유무" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDp-VW-C2I">
-                        <rect key="frame" x="162" y="127.5" width="93" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="보관 공간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6RR-fx-8ya">
+                        <rect key="frame" x="25" y="165.5" width="60" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="메모" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gCg-vx-kPM">
-                        <rect key="frame" x="18" y="168" width="298" height="34"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits"/>
-                    </textField>
-                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="a5n-zh-lid">
-                        <rect key="frame" x="158" y="72.5" width="156" height="32"/>
+                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2P2-Oz-UD0">
+                        <rect key="frame" x="25" y="200" width="125" height="32"/>
                         <segments>
                             <segment title="냉장"/>
                             <segment title="냉동"/>
                             <segment title="실온"/>
                         </segments>
                     </segmentedControl>
+                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="wd7-Cb-z12">
+                        <rect key="frame" x="25" y="261" width="350" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Yz4-eM-j0G"/>
+                        </constraints>
+                    </datePicker>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RM2-xK-iYt">
+                        <rect key="frame" x="293" y="316" width="79" height="26"/>
+                        <color key="tintColor" red="0.92156862745098034" green="0.63921568627450975" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="유통기한 없음">
+                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="10"/>
+                        </buttonConfiguration>
+                    </button>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="메모" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ka3-y4-g8f">
+                        <rect key="frame" x="25" y="378" width="350" height="110"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="110" id="6CG-dn-yuv"/>
+                        </constraints>
+                        <color key="textColor" systemColor="labelColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstItem="dmK-sx-ECx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="18" id="18d-Qu-gSj"/>
-                <constraint firstItem="gCg-vx-kPM" firstAttribute="top" secondItem="Raf-5S-mf5" secondAttribute="bottom" constant="10" id="Cdm-cZ-WaJ"/>
-                <constraint firstItem="aVy-SQ-zGZ" firstAttribute="leading" secondItem="uDp-VW-C2I" secondAttribute="trailing" constant="12" id="Mlx-LG-tzO"/>
-                <constraint firstItem="Raf-5S-mf5" firstAttribute="top" secondItem="TQg-gZ-YnO" secondAttribute="bottom" constant="10" id="MmY-5y-Qpd"/>
-                <constraint firstItem="dmK-sx-ECx" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="NOI-gt-LsX"/>
-                <constraint firstItem="gCg-vx-kPM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="18" id="ScW-53-MVS"/>
-                <constraint firstAttribute="trailing" secondItem="aVy-SQ-zGZ" secondAttribute="trailing" constant="18" id="Tra-AY-OHi"/>
-                <constraint firstAttribute="trailing" secondItem="a5n-zh-lid" secondAttribute="trailing" constant="20" id="WPO-p2-mdE"/>
-                <constraint firstItem="Raf-5S-mf5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="18" id="ZXm-Yf-Lko"/>
-                <constraint firstItem="aVy-SQ-zGZ" firstAttribute="centerY" secondItem="uDp-VW-C2I" secondAttribute="centerY" id="ZsH-dn-mDB"/>
-                <constraint firstItem="a5n-zh-lid" firstAttribute="leading" secondItem="TQg-gZ-YnO" secondAttribute="trailing" constant="20" id="c1t-wA-K6J"/>
-                <constraint firstItem="gCg-vx-kPM" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="cDt-9w-7CH"/>
-                <constraint firstItem="a5n-zh-lid" firstAttribute="centerY" secondItem="TQg-gZ-YnO" secondAttribute="centerY" id="d4T-Cv-1Av"/>
-                <constraint firstItem="uDp-VW-C2I" firstAttribute="centerY" secondItem="Raf-5S-mf5" secondAttribute="centerY" id="g8f-Jo-phQ"/>
-                <constraint firstItem="dmK-sx-ECx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="24" id="gX4-3X-fFq"/>
-                <constraint firstItem="TQg-gZ-YnO" firstAttribute="top" secondItem="dmK-sx-ECx" secondAttribute="bottom" constant="10" id="s8c-eX-qlc"/>
-                <constraint firstItem="uDp-VW-C2I" firstAttribute="leading" secondItem="Raf-5S-mf5" secondAttribute="trailing" constant="24" id="vbU-0i-MB8"/>
-                <constraint firstItem="TQg-gZ-YnO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="18" id="zL5-OJ-Pnb"/>
+                <constraint firstItem="ORa-wQ-0S1" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="6A7-lY-H2A"/>
+                <constraint firstItem="ZqM-q8-rBo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="25" id="9iw-tr-kcH"/>
+                <constraint firstAttribute="trailing" secondItem="RM2-xK-iYt" secondAttribute="trailing" constant="28" id="DNF-kr-IPb"/>
+                <constraint firstItem="2P2-Oz-UD0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="25" id="DOr-JG-tsr"/>
+                <constraint firstItem="wd7-Cb-z12" firstAttribute="top" secondItem="2P2-Oz-UD0" secondAttribute="bottom" constant="30" id="Dkj-EG-wan"/>
+                <constraint firstItem="ORa-wQ-0S1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="25" id="EKR-3M-uwz"/>
+                <constraint firstItem="RM2-xK-iYt" firstAttribute="top" secondItem="wd7-Cb-z12" secondAttribute="bottom" constant="5" id="ILL-cK-mOW"/>
+                <constraint firstItem="ZqM-q8-rBo" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="40" id="NGJ-e0-qbs"/>
+                <constraint firstItem="wd7-Cb-z12" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="25" id="Prg-W7-61t"/>
+                <constraint firstItem="ORa-wQ-0S1" firstAttribute="top" secondItem="OkS-m4-yrk" secondAttribute="bottom" id="Q6i-Ij-Foi"/>
+                <constraint firstItem="6RR-fx-8ya" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="25" id="chN-Zj-NLf"/>
+                <constraint firstItem="Ka3-y4-g8f" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="hFT-Z3-f9Y"/>
+                <constraint firstItem="OkS-m4-yrk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="25" id="hqe-Yh-yi0"/>
+                <constraint firstItem="Ka3-y4-g8f" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="25" id="k9J-rV-Uq7"/>
+                <constraint firstItem="OkS-m4-yrk" firstAttribute="top" secondItem="ZqM-q8-rBo" secondAttribute="bottom" constant="20" id="lW6-76-Bfc"/>
+                <constraint firstItem="6RR-fx-8ya" firstAttribute="top" secondItem="ORa-wQ-0S1" secondAttribute="bottom" constant="25" id="m3L-az-vXg"/>
+                <constraint firstItem="ORa-wQ-0S1" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="nbE-De-nO8"/>
+                <constraint firstItem="OkS-m4-yrk" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="nxf-V2-dNx"/>
+                <constraint firstItem="Ka3-y4-g8f" firstAttribute="top" secondItem="wd7-Cb-z12" secondAttribute="bottom" constant="67" id="r2l-wo-7M0"/>
+                <constraint firstItem="2P2-Oz-UD0" firstAttribute="top" secondItem="6RR-fx-8ya" secondAttribute="bottom" constant="15" id="uXc-pf-leR"/>
+                <constraint firstItem="wd7-Cb-z12" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="wg9-FG-I2h"/>
+                <constraint firstItem="ZqM-q8-rBo" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="xZ9-NR-Zq0"/>
             </constraints>
+            <size key="customSize" width="400" height="519"/>
             <connections>
-                <outlet property="datePicker" destination="Raf-5S-mf5" id="FF3-cl-MP4"/>
-                <outlet property="isExpirationSwitch" destination="aVy-SQ-zGZ" id="h0g-9w-a1c"/>
-                <outlet property="memoTextField" destination="gCg-vx-kPM" id="VCu-6U-cXZ"/>
-                <outlet property="nameTextField" destination="dmK-sx-ECx" id="tVu-ly-ocf"/>
-                <outlet property="typePickerView" destination="TQg-gZ-YnO" id="hGL-e4-1nR"/>
+                <outlet property="datePicker" destination="wd7-Cb-z12" id="bgQ-T6-kVV"/>
+                <outlet property="memoTextField" destination="Ka3-y4-g8f" id="5iT-HM-b2L"/>
+                <outlet property="nameTextField" destination="ZqM-q8-rBo" id="T6Q-ZD-XPy"/>
+                <outlet property="segmentControl" destination="2P2-Oz-UD0" id="HfG-kv-301"/>
+                <outlet property="typePickerView" destination="ORa-wQ-0S1" id="KBr-kO-852"/>
             </connections>
-            <point key="canvasLocation" x="131.8840579710145" y="112.5"/>
+            <point key="canvasLocation" x="180" y="302"/>
         </collectionViewCell>
+        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="g6R-bs-buJ">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+            <color key="textColor" systemColor="labelColor"/>
+            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+            <point key="canvasLocation" x="130" y="-306"/>
+        </textView>
     </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

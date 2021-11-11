@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IY6-vG-yrT">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -70,37 +70,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="재료 등록하기 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZQ-xx-XG0">
-                                <rect key="frame" x="40" y="124" width="135.5" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQx-1u-1Rc">
-                                <rect key="frame" x="169" y="772" width="76.5" height="31"/>
+                                <rect key="frame" x="153" y="738" width="108" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="PU8-SA-GzZ"/>
+                                </constraints>
+                                <color key="tintColor" red="0.4392156862745098" green="0.40392156862745099" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="품목추가 "/>
+                                <buttonConfiguration key="configuration" style="plain" title="품목추가 ">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="actAddItem:" destination="IY6-vG-yrT" eventType="touchUpInside" id="ifk-dz-A2q"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="yul-kg-tJz">
-                                <rect key="frame" x="108.5" y="817" width="197" height="31"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qeT-9Y-qFk">
+                                <rect key="frame" x="0.0" y="816" width="414" height="80"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AgO-Wi-NDy">
-                                        <rect key="frame" x="0.0" y="0.0" width="48.5" height="31"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSG-GY-kwr">
+                                        <rect key="frame" x="53" y="19" width="101" height="31"/>
+                                        <color key="tintColor" red="0.4392156862745098" green="0.40392156862745099" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="취소"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="재료등록 하기">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="14"/>
+                                        </buttonConfiguration>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OF9-sG-zeB">
-                                        <rect key="frame" x="148.5" y="0.0" width="48.5" height="31"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5U-VU-51a">
+                                        <rect key="frame" x="260" y="19" width="101" height="31"/>
+                                        <color key="tintColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="등록"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="등록재료 삭제"/>
                                     </button>
                                 </subviews>
-                            </stackView>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="5DX-NN-N2M"/>
+                                    <constraint firstAttribute="bottom" secondItem="LSG-GY-kwr" secondAttribute="bottom" constant="30" id="B0V-yK-Wmy"/>
+                                    <constraint firstItem="LSG-GY-kwr" firstAttribute="leading" secondItem="qeT-9Y-qFk" secondAttribute="leading" constant="53" id="Cg8-eU-Ts5"/>
+                                    <constraint firstItem="LSG-GY-kwr" firstAttribute="leading" secondItem="qeT-9Y-qFk" secondAttribute="leading" constant="53" id="Lbf-gc-Jsm"/>
+                                    <constraint firstAttribute="bottom" secondItem="g5U-VU-51a" secondAttribute="bottom" constant="30" id="Mz9-Kw-Qnc"/>
+                                    <constraint firstAttribute="trailing" secondItem="g5U-VU-51a" secondAttribute="trailing" constant="53" id="gXR-cK-AFg"/>
+                                </constraints>
+                            </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IA4-7s-3GR">
-                                <rect key="frame" x="36" y="177" width="342" height="571"/>
+                                <rect key="frame" x="25" y="84" width="364" height="604"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="p2c-H1-FC2">
                                     <size key="itemSize" width="128" height="128"/>
@@ -123,16 +136,19 @@
                         <viewLayoutGuide key="safeArea" id="qwA-MI-DTq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="IA4-7s-3GR" firstAttribute="centerX" secondItem="Osb-Eg-5OS" secondAttribute="centerX" id="1rF-9b-5M2"/>
-                            <constraint firstItem="IA4-7s-3GR" firstAttribute="top" secondItem="NZQ-xx-XG0" secondAttribute="bottom" constant="24" id="4fx-9S-ZbH"/>
-                            <constraint firstItem="yul-kg-tJz" firstAttribute="centerX" secondItem="Osb-Eg-5OS" secondAttribute="centerX" id="AYE-Uy-Tog"/>
-                            <constraint firstItem="qwA-MI-DTq" firstAttribute="bottom" secondItem="yul-kg-tJz" secondAttribute="bottom" constant="14" id="Z2F-Sy-PLu"/>
-                            <constraint firstItem="BQx-1u-1Rc" firstAttribute="centerX" secondItem="Osb-Eg-5OS" secondAttribute="centerX" id="hg3-Op-6eT"/>
-                            <constraint firstItem="NZQ-xx-XG0" firstAttribute="leading" secondItem="qwA-MI-DTq" secondAttribute="leading" constant="40" id="hvW-3V-QUn"/>
-                            <constraint firstItem="NZQ-xx-XG0" firstAttribute="top" secondItem="qwA-MI-DTq" secondAttribute="top" constant="80" id="jzG-IQ-IaX"/>
-                            <constraint firstItem="BQx-1u-1Rc" firstAttribute="top" secondItem="IA4-7s-3GR" secondAttribute="bottom" constant="24" id="rNh-pt-7at"/>
-                            <constraint firstItem="IA4-7s-3GR" firstAttribute="leading" secondItem="qwA-MI-DTq" secondAttribute="leading" constant="36" id="xYT-6a-d5y"/>
-                            <constraint firstItem="yul-kg-tJz" firstAttribute="top" secondItem="BQx-1u-1Rc" secondAttribute="bottom" constant="14" id="ybc-6g-Jtf"/>
+                            <constraint firstItem="qeT-9Y-qFk" firstAttribute="leading" secondItem="qwA-MI-DTq" secondAttribute="leading" id="6xb-iJ-bk8"/>
+                            <constraint firstItem="BQx-1u-1Rc" firstAttribute="top" secondItem="IA4-7s-3GR" secondAttribute="bottom" constant="50" id="CFc-1f-Lut"/>
+                            <constraint firstItem="IA4-7s-3GR" firstAttribute="centerX" secondItem="Osb-Eg-5OS" secondAttribute="centerX" id="FqX-UB-jJD"/>
+                            <constraint firstAttribute="bottom" secondItem="qeT-9Y-qFk" secondAttribute="bottom" id="Geu-O2-Pib"/>
+                            <constraint firstAttribute="bottom" secondItem="qeT-9Y-qFk" secondAttribute="bottom" id="Il3-Bi-TnH"/>
+                            <constraint firstItem="IA4-7s-3GR" firstAttribute="leading" secondItem="qwA-MI-DTq" secondAttribute="leading" constant="25" id="QJ8-69-i6n"/>
+                            <constraint firstItem="BQx-1u-1Rc" firstAttribute="centerX" secondItem="Osb-Eg-5OS" secondAttribute="centerX" id="RRw-MO-1jj"/>
+                            <constraint firstItem="qeT-9Y-qFk" firstAttribute="leading" secondItem="qwA-MI-DTq" secondAttribute="leading" id="TTp-PF-pEk"/>
+                            <constraint firstItem="IA4-7s-3GR" firstAttribute="top" secondItem="qwA-MI-DTq" secondAttribute="top" constant="40" id="XFj-5T-9TL"/>
+                            <constraint firstItem="qeT-9Y-qFk" firstAttribute="top" secondItem="BQx-1u-1Rc" secondAttribute="bottom" constant="50" id="ZSu-2e-QCR"/>
+                            <constraint firstItem="qwA-MI-DTq" firstAttribute="trailing" secondItem="qeT-9Y-qFk" secondAttribute="trailing" id="e1e-Yo-ptc"/>
+                            <constraint firstItem="qwA-MI-DTq" firstAttribute="trailing" secondItem="qeT-9Y-qFk" secondAttribute="trailing" id="lXu-Pw-btG"/>
+                            <constraint firstItem="BQx-1u-1Rc" firstAttribute="leading" secondItem="qwA-MI-DTq" secondAttribute="leading" constant="153" id="nAq-K7-nbL"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" selectedImage="plus.circle.fill" catalog="system" id="8cW-TA-Yiy">
