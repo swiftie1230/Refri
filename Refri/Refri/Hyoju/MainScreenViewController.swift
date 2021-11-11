@@ -15,47 +15,59 @@ class MainScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.delegate = self
-        tableView.dataSource = self
+        let inventoryCellNib = UINib(nibName: "InventoryCollectionViewCell", bundle: nil)
+        collectionView.register(inventoryCellNib, forCellWithReuseIdentifier: "InventoryCell")
         
-        tableView.register(FirstTableViewCell.self, forCellReuseIdentifier: "FirstTableViewCell")
+        let expirationDateCollectionViewCellNib = UINib(nibName: "ExpirationDateCollectionViewCell", bundle: nil)
+        collectionView.register(expirationDateCollectionViewCellNib, forCellWithReuseIdentifier: "ExpirationDateCollectionViewCell")
+        
+        let CheckItemCellNib = UINib(nibName: "CheckItemCell", bundle: nil)
+        collectionView.register(CheckItemCellNib, forCellWithReuseIdentifier: "CheckItemCell")
+        
+        let SpacingCellNib = UINib(nibName: "SpacingCell", bundle: nil)
+        collectionView.register(SpacingCellNib, forCellWithReuseIdentifier: "SpacingCell")
     }
+
+    
 }
 
-extension MainScreenViewController: UITableViewDelegate, UITableViewDataSource {
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+extension MainScreenViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
+
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 5
     }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let section = indexPath.section
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
         
-        switch section {
-        case 1:
-            return UITableViewCell()
+        switch indexPath.item {
+        case 0:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "InventoryCell", for: indexPath) as! InventoryCollectionViewCell
+            cell.widthAnchor.constraint(equalToConstant: view.frame.width).isActive = true
+            cell.heightAnchor.constraint(equalToConstant: 380).isActive = true
+            
+            return cell
         case 2:
-            return UITableViewCell()
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ExpirationDateCollectionViewCell", for: indexPath) as! ExpirationDateCollectionViewCell
+            cell.widthAnchor.constraint(equalToConstant: view.frame.width).isActive = true
+            cell.heightAnchor.constraint(equalToConstant: 412).isActive = true
+            return cell
+        case 4:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CheckItemCell", for: indexPath) as! CheckItemCell
+            cell.widthAnchor.constraint(equalToConstant: view.frame.width).isActive = true
+            cell.heightAnchor.constraint(equalToConstant: 419).isActive = true
+            return cell
         default:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "FirstTableViewCell") as! FirstTableViewCell
-            return UITableViewCell()
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SpacingCell", for: indexPath) as! SpacingCell
+            cell.widthAnchor.constraint(equalToConstant: view.frame.width).isActive = true
+            cell.heightAnchor.constraint(equalToConstant: 11).isActive = true
+          
+            
+            return cell
         }
         
-    }
-    
-    //MARK: - set header of tableView section
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        switch section{
-        case 1:
-            return "빨리 먹어야해요"
-        case 2:
-            return "재료들을 확인해 보세요"
-        default:
-            return "(id)님의 냉장고는?"
-        }
+        
+        
     }
     
 
