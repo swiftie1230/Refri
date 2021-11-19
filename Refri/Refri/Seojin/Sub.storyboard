@@ -54,6 +54,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="emailTextFieldEdited:" destination="Y6W-OH-hqX" eventType="editingDidEnd" id="fpm-CM-Es2"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sLa-A8-DWE">
                                         <rect key="frame" x="21" y="98" width="372" height="50"/>
@@ -62,6 +65,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="pwTextFieldEdited:" destination="Y6W-OH-hqX" eventType="editingDidEnd" id="UsI-G2-vio"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDt-AJ-NjE">
                                         <rect key="frame" x="327" y="115" width="51" height="31"/>
@@ -81,6 +87,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="로그인">
                                             <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="loginBtnClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="nv1-iF-ZzX"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="C2a-OJ-jYW">
                                         <rect key="frame" x="101.5" y="250" width="211" height="31"/>
@@ -109,6 +118,13 @@
                                             </button>
                                         </subviews>
                                     </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aD-hC-cUv">
+                                        <rect key="frame" x="22" y="151" width="280" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -148,11 +164,12 @@
                         <outlet property="loginButton" destination="NXM-ZK-iKR" id="yG3-4E-jeH"/>
                         <outlet property="passwordTextField" destination="sLa-A8-DWE" id="E36-qj-Dla"/>
                         <outlet property="subView" destination="xMv-Qb-a9U" id="RSI-WQ-zVq"/>
+                        <outlet property="warningLabel" destination="4aD-hC-cUv" id="E5Z-BW-mzY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7" y="83"/>
+            <point key="canvasLocation" x="-38" y="82"/>
         </scene>
         <!--SignIn View Controller-->
         <scene sceneID="wDD-FP-hQl">

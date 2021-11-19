@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class SignInViewController: UIViewController {
     @IBOutlet weak var subView: UIView!
