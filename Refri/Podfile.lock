@@ -1,16 +1,24 @@
 PODS:
+  - Alamofire (5.4.4)
   - ESTabBarController-swift (2.8.0)
+  - SwiftyJSON (5.0.1)
 
 DEPENDENCIES:
+  - Alamofire (~> 5.2)
   - ESTabBarController-swift
+  - SwiftyJSON
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - ESTabBarController-swift
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
   ESTabBarController-swift: 05593a6ad64700b03c0eb60ff625916370aa4136
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: bab3243de8a6ee83afc33edb4b5c393f8c998880
+PODFILE CHECKSUM: 192594b301f6e14217bc4bdb7356de53bf576e8f
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.10.2
