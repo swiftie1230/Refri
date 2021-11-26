@@ -33,12 +33,15 @@ class SignInViewController: UIViewController, UITextFieldDelegate, UITextViewDel
             
             linkTextView.textAlignment = NSTextAlignment.center
             
+            finishButton.backgroundColor = UIColor.lightGray
+        
             // 개인정보 & 이용약관 링크
             let attributedString = NSMutableAttributedString(string: "가입 시 이용약관을 포함한 개인정보 처리방침에 동의합니다.")
             attributedString.addAttribute(.link, value: "https://swiftie1230.github.io", range: NSRange(location:5, length: 4))
             attributedString.addAttribute(.link, value: "https://www.notion.so/iOS-14a048ecb7064f5aa33900b34fc47a77", range: NSRange(location:15, length: 9))
             linkTextView.attributedText = attributedString
         }
+    
         
         override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
               self.view.endEditing(true)
@@ -73,7 +76,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate, UITextViewDel
         // 두 개 다 채워져 있으면 활성화 (AllowColor)
         func whetherAllowRegisterOrNot () {
             if nickName && email && pw && pwCheck {
-                finishButton.backgroundColor = UIColor(named: "AllowColor")
+                finishButton.backgroundColor = UIColor(named: "Gradient-deep")
             } else {
                 finishButton.backgroundColor = UIColor.lightGray
             }
@@ -100,6 +103,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate, UITextViewDel
                 warningLabel.text = ""
                 warningLabel.textColor = UIColor.lightGray
                 emailTextField.layer.borderColor = UIColor.lightGray.cgColor
+                emailTextField.layer.borderWidth = 0
                 email = true
             } else {
                 // 일치하지 않는다면
@@ -116,6 +120,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate, UITextViewDel
                 warningLabel.text = ""
                 warningLabel.textColor = UIColor.lightGray
                 pwTextField.layer.borderColor = UIColor.lightGray.cgColor
+                pwTextField.layer.borderWidth = 0
                 pw = true
             } else {
                 whenTextFieldWrongInput(textField: pwTextField, label: warningLabel, labelText: "영어 대/소문자, 숫자, 특수문자 중 3종류 조합 8자리 이상")
@@ -130,6 +135,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate, UITextViewDel
                 pwCheck = false
             } else {
                 pwConfirmTextField.layer.borderColor = UIColor.lightGray.cgColor
+                pwConfirmTextField.layer.borderWidth = 0
                 warningLabel.text = ""
                 pwCheck = true
             }
@@ -138,7 +144,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate, UITextViewDel
     
     
     @IBAction func actSignInButton(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        // dismiss(animated: true, completion: nil)
                 var email = emailTextField.text ?? ""
                 var pw = pwTextField.text ?? ""
                 var nickName = idTextField.text ?? ""

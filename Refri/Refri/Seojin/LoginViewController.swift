@@ -37,6 +37,7 @@ class LoginViewController: UIViewController {
         setTextFieldUnderBar(passwordTextField)
         
         loginButton.layer.cornerRadius = 25
+        loginButton.backgroundColor = UIColor.lightGray
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
@@ -67,7 +68,7 @@ class LoginViewController: UIViewController {
         // 두 개 다 채워져 있으면 활성화 (AllowColor)
         func whetherAllowLoginOrNot() {
             if email && pw {
-                loginButton.backgroundColor = UIColor(named: "AllowColor")
+                loginButton.backgroundColor = UIColor(named: "Gradient-deep")
             } else {
                 loginButton.backgroundColor = UIColor.lightGray
             }
@@ -81,6 +82,7 @@ class LoginViewController: UIViewController {
                     warningLabel.text = ""
                     warningLabel.textColor = UIColor.lightGray
                     emailTextField.layer.borderColor = UIColor.lightGray.cgColor
+                    emailTextField.layer.borderWidth = 0
                     email = true
                 } else {
                     // 일치하지 않는다면
@@ -101,14 +103,14 @@ class LoginViewController: UIViewController {
         var id = emailTextField.text ?? ""
         var pw = emailTextField.text ?? ""
                 
-                if loginButton.backgroundColor == UIColor(named: "AllowColor"){
+        if loginButton.backgroundColor == UIColor(named: "Gradient-deep"){
                     
-                    var parameters = [
-                        "email" : id,
-                        "password" : pw
-                    ]
+            var parameters = [
+                "email" : id,
+                "password" : pw
+            ]
                     
-                    AF.request("http://202.150.188.65/api/login", method: .post, parameters: parameters, encoding: JSONEncoding.default).validate().responseJSON { (response) in
+            AF.request("http://202.150.188.65/api/login", method: .post, parameters: parameters, encoding: JSONEncoding.default).validate().responseJSON { (response) in
                         switch response.result {
                         case .success:
                             print("success")
